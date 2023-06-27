@@ -3,7 +3,9 @@
 :root {
   --primary-color: #cddafd;
   --secondary-color: #465b95;
+  --lighter-navy-blue: #6379b5;
   --darkest-color: #0c1a3d;
+  --lightest-color: #f6f7f0;
 }
 
 * {
@@ -59,7 +61,14 @@ header {
         }
         > a:hover {
           text-decoration: none;
-          color: var(--primary-color);
+          color: var(--lightest-color);
+        }
+        & .flower-icon {
+          transition-duration: 2s;
+          transition-property: transform;
+        }
+        & .flower-icon:hover {
+          transform: rotate(360deg);
         }
       }
     }
@@ -98,9 +107,23 @@ section {
   & .icon-list {
     display: flex;
     gap: 1.25rem;
+    margin-bottom: 0.5rem;
   }
   & .icon {
     height: 3rem;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  & td {
+    border-bottom: 2px solid #6379b5;
+    padding: 1rem;
+  }
+  .year {
+    text-align: right;
+    font-style: italic;
   }
 }
 
