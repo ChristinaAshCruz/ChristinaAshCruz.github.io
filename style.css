@@ -18,25 +18,29 @@ body {
   color: var(--darkest-color);
 }
 
-/* h1,
-.main-logo {
-  font-family: "Climate Crisis", cursive;
-  text-transform: uppercase;
-} */
+.header {
+  width: 100%;
+  border: 2px dashed tomato;
+}
 
 header {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--secondary-color);
+  width: 100%;
+  background-size: cover;
+  border: 2px dashed tomato; */
+
+  /* min-height: 25rem; */
   /* border: 2px dashed tomato; */
   /* NAV BAR */
-  padding: 3rem;
-  > nav {
+  /* padding: 3rem; */
+  & nav {
+    /* padding: 3rem; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 80%;
     /* border: 2px dashed orange; */
     > h1 {
       font-family: "Climate Crisis", cursive;
