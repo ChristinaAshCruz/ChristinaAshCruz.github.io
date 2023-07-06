@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --color-00: #348ac7;
+  --color-01: #d74a18;
+  --color-02: #ede6db;
+  --color-03: #110902;
+  --color-04: #e79d2c;
+
+  --primary-color: #cddafd;
+  --secondary-color: #465b95;
+  --lighter-navy-blue: #6379b5;
+  --darkest-color: #0c1a3d;
+  --lightest-color: #f6f7f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  width: 100%;
+}
+
+body {
+  background-color: var(--primary-color) !important;
+}
+
+.header {
+  width: 100%;
+  box-shadow: 0 0 0 100vmax var(--secondary-color);
+  clip-path: inset(0 -100vmax);
+  background-color: var(--secondary-color);
+  display: flex;
+  overflow: initial;
+  & a {
+    color: var(--darkest-color);
+    transition: 80ms;
+  }
+  & a:hover {
+    border-bottom: 2px solid var(--lightest-color);
+    color: var(--lightest-color);
+  }
+  & li {
+    > img {
+      height: 32px;
+      width: auto;
+    }
+    & .flower-icon {
+      max-height: 2rem;
+      width: auto;
+      transition-duration: 2s;
+      transition-property: transform;
+    }
+    & .flower-icon:hover {
+      transform: rotate(360deg);
+    }
+  }
+  & h1 {
+    font-family: "Climate Crisis", cursive;
+    text-transform: uppercase;
+    color: var(--darkest-color);
+  }
+}
+
+.about {
+  .profile {
+    border: 3px solid var(--darkest-color);
+  }
+}
+
+/* components */
+
+.card {
+  border: 3px solid var(--darkest-color) !important;
+  background: var(--lightest-color) !important;
+  & hr {
+    border: none;
+    color: var(--secondary-color) !important;
+    background-color: var(--secondary-color) !important;
+    height: 3px !important;
+  }
+}
+
+.btn {
+  background-color: #f6f7f0 !important;
+  padding: 1rem !important;
+  border-radius: 15px !important;
+  text-decoration: none !important;
+  color: var(--darkest-color) !important;
+  border: 3px solid var(--darkest-color) !important;
+  transition: 0.2s !important;
+}
+
+.btn:hover {
+  background-color: #465b95 !important;
+  color: #f6f7f0 !important;
+  border: 3px solid var(--darkest-color) !important;
+  transform: translate(0.25rem, -0.25rem) !important;
+  box-shadow: -0.25rem 0.25rem var(--darkest-color) !important;
+}
+
+@media only screen and (min-width: 1350px) {
+  /* ruleset for >= 320px */
+}
