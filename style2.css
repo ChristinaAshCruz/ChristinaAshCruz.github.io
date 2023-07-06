@@ -23,6 +23,11 @@
 
 body {
   background-color: var(--primary-color) !important;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -68,16 +73,41 @@ body {
   }
 }
 
+footer {
+  box-shadow: 0 0 0 100vmax var(--lighter-navy-blue);
+  clip-path: inset(0 -100vmax);
+  background: var(--lighter-navy-blue);
+  color: var(--lightest-color);
+  > .container {
+    & a {
+      font-style: italic;
+      color: var(--darkest-color);
+      text-decoration: none;
+      transition: 80ms;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+    & .icon-links {
+      & i:hover {
+        color: var(--lightest-color);
+      }
+    }
+  }
+}
+
 /* components */
 
-.card {
-  border: 3px solid var(--darkest-color) !important;
-  background: var(--lightest-color) !important;
-  & hr {
-    border: none;
-    color: var(--secondary-color) !important;
-    background-color: var(--secondary-color) !important;
-    height: 3px !important;
+.education-cards {
+  .card {
+    border: 3px solid var(--darkest-color) !important;
+    background: var(--lightest-color) !important;
+    & hr {
+      border: none;
+      color: var(--secondary-color) !important;
+      background-color: var(--secondary-color) !important;
+      height: 3px !important;
+    }
   }
 }
 
