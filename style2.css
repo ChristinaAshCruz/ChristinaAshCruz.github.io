@@ -38,7 +38,7 @@ body {
   display: flex;
   overflow: initial;
   & a {
-    color: var(--darkest-color);
+    color: var(--darkest-color) !important;
     transition: 80ms;
   }
   & a:hover {
@@ -68,6 +68,10 @@ body {
 }
 
 .about {
+  color: var(--darkest-color) !important;
+  .typewrite {
+    color: var(--darkest-color);
+  }
   .profile {
     border: 3px solid var(--darkest-color);
   }
