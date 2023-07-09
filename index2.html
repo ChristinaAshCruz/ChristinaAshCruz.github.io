@@ -46,7 +46,7 @@
       <h1 class="text-center fs-0 pt-3">Christina Cruz</h1>
     </section>
     <!-- MAIN -->
-    <main class="container px-3 pb-4 mb-5">
+    <main class="container px-4 pb-4 mb-5">
       <!-- ABOUT section -->
       <section
         class="my-5 py-5 px-2 about d-flex flex-column align-items-center text-center gap-4 flex-md-row px-md-0 gap-md-0 justify-content-md-between text-lg-start mh-100"
@@ -88,37 +88,43 @@
             </p>
           </div>
           <div
-            class="icon-list d-flex w-auto justify-content-md-start justify-content-center gap-3"
+            class="icon-list d-flex w-auto justify-content-md-start justify-content-center gap-2"
           >
             <img
               src="/img/html-5.png"
               alt=""
               class="icon w-auto"
-              style="max-height: 4rem"
+              style="max-height: 3rem"
             />
             <img
               src="/img/css-3.png"
               alt=""
               class="icon w-auto"
-              style="max-height: 4rem"
+              style="max-height: 3rem"
             />
             <img
               src="/img/python.png"
               alt=""
               class="icon w-auto"
-              style="max-height: 4rem"
+              style="max-height: 3rem"
             />
             <img
               src="/img/java.png"
               alt=""
               class="icon w-auto"
-              style="max-height: 4rem"
+              style="max-height: 3rem"
+            />
+            <img
+              src="/img/icons8-spring-boot-64.png"
+              alt=""
+              class="icon w-auto"
+              style="max-height: 3rem"
             />
             <img
               src="/img/bootstrap.png"
-              alt=""
+              alt="bootstrap"
               class="icon w-auto"
-              style="max-height: 4rem"
+              style="max-height: 3rem"
             />
           </div>
           <!-- <div> -->
@@ -128,9 +134,10 @@
           <!-- </div> -->
         </div>
       </section>
-      <section class="education my-5">
+      <section class="education my-5" id="education">
         <h2 class="fw-bold text-center">Education</h2>
-        <p class="text-center py-3 py-lg-2">
+        <!-- <hr /> -->
+        <p class="text-center py-3 pt-2 py-lg-2">
           Since 2021, I have shifted gears from working as an artist and
           illustrator to studying to be a web developer! I've worked on several
           personal projects as well as working with teams.
@@ -166,6 +173,321 @@
             <hr />
             <p class="fst-italic mb-1">Basics, Plus, and React programs</p>
             <p class="m-0 text-black-50">Feb 2022 - Sep 2022</p>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="my-5 py-5">
+        <div>
+          <h2 class="fw-bolder mb-3">Projects</h2>
+        </div>
+        <!-- <hr /> -->
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <!-- the data-bs-target opens up this id value -->
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <!-- the data-bs-parent states that its the child of this id value -->
+              <div
+                class="accordion-body p-4 pb-2 d-flex gap-4 align-items-center"
+              >
+                <div
+                  class="project-content-body d-flex flex-column justify-content-center align-items-start gap-2"
+                >
+                  <!-- PROJECT title -->
+                  <div
+                    class="fw-bold m-0 d-flex justify-content-start align-items-center gap-3"
+                  >
+                    <h4 class="m-0 w-auto fw-bold">Project Title</h4>
+                    <div class="w-auto">
+                      <img
+                        src="/img/html-5.png"
+                        alt=""
+                        class="project-icon w-auto"
+                        style="max-height: 3rem"
+                      />
+                      <img
+                        src="/img/css-3.png"
+                        alt=""
+                        class="project-icon w-auto"
+                        style="max-height: 3rem"
+                      />
+                      <img
+                        src="/img/python.png"
+                        alt=""
+                        class="project-icon w-auto"
+                        style="max-height: 3rem"
+                      />
+                      <img
+                        src="/img/java.png"
+                        alt=""
+                        class="project-icon w-auto"
+                        style="max-height: 3rem"
+                      />
+                      <img
+                        src="/img/icons8-spring-boot-64.png"
+                        alt=""
+                        class="project-icon w-auto"
+                        style="max-height: 3rem"
+                      />
+                      <img
+                        src="/img/bootstrap.png"
+                        alt="bootstrap"
+                        class="project-icon w-auto"
+                        style="max-height: 3rem"
+                      />
+                    </div>
+                  </div>
+                  <!-- PROJECT description -->
+                  <p class="m-0 p-0">
+                    A travel itinerary app for users to organize solo and group
+                    trips
+                  </p>
+                  <div>
+                    <ul>
+                      <li>feature #1</li>
+                      <li>feature #2</li>
+                      <li>feature #3</li>
+                      <li>feature #4</li>
+                      <li>feature #5</li>
+                    </ul>
+                  </div>
+                  <!-- GITHUB repo link -->
+                  <a href="" class="btn d-flex col-5 justify-content-center"
+                    ><i
+                      class="fa-solid fa-circle-right p-0 m-0 w-auto fs-4 me-3"
+                    ></i>
+                    <p class="p-0 m-0 w-auto">Github Repo</p></a
+                  >
+                </div>
+                <div class="flex-grow-1 project-demo">
+                  <img
+                    src="/img/project_demos/wanderoo_demo.gif"
+                    alt=""
+                    class="object-fit-fill w-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div
+                  class="accordion-body p-4 pb-2 d-flex gap-4 align-items-center"
+                >
+                  <div
+                    class="project-content-body d-flex flex-column justify-content-center align-items-start gap-2"
+                  >
+                    <!-- PROJECT title -->
+                    <div
+                      class="fw-bold m-0 d-flex justify-content-start align-items-center gap-3"
+                    >
+                      <h4 class="m-0 w-auto fw-bold">Project Title</h4>
+                      <div class="w-auto">
+                        <img
+                          src="/img/html-5.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/css-3.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/python.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/java.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/icons8-spring-boot-64.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/bootstrap.png"
+                          alt="bootstrap"
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                      </div>
+                    </div>
+                    <!-- PROJECT description -->
+                    <p class="m-0 p-0">
+                      A travel itinerary app for users to organize solo and
+                      group trips
+                    </p>
+                    <div>
+                      <ul>
+                        <li>feature #1</li>
+                        <li>feature #2</li>
+                        <li>feature #3</li>
+                        <li>feature #4</li>
+                        <li>feature #5</li>
+                      </ul>
+                    </div>
+                    <!-- GITHUB repo link -->
+                    <a href="" class="btn d-flex col-5 justify-content-center"
+                      ><i
+                        class="fa-solid fa-circle-right p-0 m-0 w-auto fs-4 me-3"
+                      ></i>
+                      <p class="p-0 m-0 w-auto">Github Repo</p></a
+                    >
+                  </div>
+                  <div class="flex-grow-1 project-demo">
+                    <img
+                      src="/img/project_demos/wanderoo_demo.gif"
+                      alt=""
+                      class="object-fit-fill w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Accordion Item #3
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div
+                  class="accordion-body p-4 pb-2 d-flex gap-4 align-items-center"
+                >
+                  <div
+                    class="project-content-body d-flex flex-column justify-content-center align-items-start gap-2"
+                  >
+                    <!-- PROJECT title -->
+                    <div
+                      class="fw-bold m-0 d-flex justify-content-start align-items-center gap-3"
+                    >
+                      <h4 class="m-0 w-auto fw-bold">Project Title</h4>
+                      <div class="w-auto">
+                        <img
+                          src="/img/html-5.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/css-3.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/python.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/java.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/icons8-spring-boot-64.png"
+                          alt=""
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                        <img
+                          src="/img/bootstrap.png"
+                          alt="bootstrap"
+                          class="project-icon w-auto"
+                          style="max-height: 3rem"
+                        />
+                      </div>
+                    </div>
+                    <!-- PROJECT description -->
+                    <p class="m-0 p-0">
+                      A travel itinerary app for users to organize solo and
+                      group trips
+                    </p>
+                    <div>
+                      <ul>
+                        <li>feature #1</li>
+                        <li>feature #2</li>
+                        <li>feature #3</li>
+                        <li>feature #4</li>
+                        <li>feature #5</li>
+                      </ul>
+                    </div>
+                    <!-- GITHUB repo link -->
+                    <a href="" class="btn d-flex col-5 justify-content-center"
+                      ><i
+                        class="fa-solid fa-circle-right p-0 m-0 w-auto fs-4 me-3"
+                      ></i>
+                      <p class="p-0 m-0 w-auto">Github Repo</p></a
+                    >
+                  </div>
+                  <div class="flex-grow-1 project-demo">
+                    <img
+                      src="/img/project_demos/wanderoo_demo.gif"
+                      alt=""
+                      class="object-fit-fill w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -213,7 +535,10 @@
             <a target="_blank" href="https://icons8.com/icon/90519/spring-boot"
               >Spring Boot</a
             >
-            icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+            and
+            <a target="_blank" href="https://icons8.com/icon/3764/sql">SQL</a>
+            icon by <a target="_blank" href="https://icons8.com">Icons8</a> icon
+            by <a target="_blank" href="https://icons8.com">Icons8</a>
           </div>
         </div>
       </div>
