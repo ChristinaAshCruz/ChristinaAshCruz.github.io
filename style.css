@@ -1,209 +1,220 @@
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
+  --color-00: #348ac7;
+  --color-01: #d74a18;
+  --color-02: #ede6db;
+  --color-03: #110902;
+  --color-04: #e79d2c;
+
   --primary-color: #cddafd;
   --secondary-color: #465b95;
   --lighter-navy-blue: #6379b5;
   --darkest-color: #0c1a3d;
   --lightest-color: #f6f7f0;
+
+  --border-settings: 3px solid var(--darkest-color) !important;
+  --border-radius-settings: 0.375rem;
 }
 
 * {
   margin: 0;
   padding: 0;
-  width: 100%;
   font-family: "Space Mono", monospace;
+  width: 100%;
 }
 
-/* .header {
-  width: 100%;
-  border: 2px dashed tomato;
-} */
+.panel-default > .panel-heading {
+  border: var(--border-settings);
+}
+
+body {
+  background-color: var(--primary-color) !important;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
 
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--secondary-color);
   width: 100%;
-  background-size: cover;
-
-  min-height: 25rem;
-  border: 2px dashed tomato;
-  /* NAV BAR */
-  padding: 3rem;
-  & nav {
-    /* padding: 3rem; */
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    /* border: 2px dashed orange; */
-    > h1 {
-      font-family: "Climate Crisis", cursive;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 4rem;
+  box-shadow: 0 0 0 100vmax var(--secondary-color);
+  clip-path: inset(0 -100vmax);
+  background-color: var(--secondary-color);
+  display: flex;
+  overflow: initial;
+  & a {
+    color: var(--darkest-color) !important;
+    transition: 80ms;
+  }
+  & a:hover {
+    border-bottom: 2px solid var(--lightest-color);
+    color: var(--lightest-color) !important;
+  }
+  & li {
+    > img {
+      height: 32px;
+      width: auto;
     }
-    > ul {
-      display: flex;
-      justify-content: space-between;
-      /* border: 2px dashed orange; */
-      text-align: center;
-      width: 100%;
-      > li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        > a {
-          font-size: 1.05rem;
-          text-decoration: none;
-          color: var(--darkest-color);
-        }
-        > a:hover {
-          text-decoration: none;
-          color: var(--lightest-color);
-        }
-        & .flower-icon {
-          max-height: 2rem;
-          width: auto;
-          transition-duration: 2s;
-          transition-property: transform;
-        }
-        & .flower-icon:hover {
-          transform: rotate(360deg);
-        }
-      }
+    & .flower-icon {
+      max-height: 2rem;
+      width: auto;
+      transition-duration: 2s;
+      transition-property: transform;
+    }
+    & .flower-icon:hover {
+      transform: rotate(360deg);
     }
   }
-}
-
-@media only screen and (max-width: 300px) {
-  * {
-    width: 100%;
+  & h1 {
+    font-family: "Climate Crisis", cursive;
+    text-transform: uppercase;
+    color: var(--darkest-color);
   }
-  body {
-    width: 100%;
-  }
-  .header {
-    width: 100%;
-  }
-}
-
-main {
-  padding: 5rem;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  gap: 5rem;
-}
-
-section {
-  display: flex;
-  gap: 2rem;
 }
 
 .about {
-  align-items: center;
-  > img {
-    width: 23rem;
-    border-radius: 15px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border: 0.25rem solid var(--darkest-color);
+  color: var(--darkest-color) !important;
+  .typewrite {
+    color: var(--darkest-color);
   }
-  & .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-  }
-  & .icon-list {
-    display: flex;
-    gap: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
-  & .icon {
-    height: 3rem;
+  .profile {
+    border: 3px solid var(--darkest-color);
   }
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  /* box-sizing: border-box; */
-  > .project {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    > .content {
-      box-sizing: border-box;
-      gap: 1rem;
-      justify-content: space-between;
-      display: flex;
-      flex-direction: column;
-      /* to account for button height */
-      padding-bottom: 1rem;
-      .btn-row {
-        margin-top: 1rem;
-        .btn {
-          box-sizing: border-box;
-          padding: 1rem;
-        }
+#projects {
+  & .project-icon {
+    height: 2.5rem;
+    width: auto;
+  }
+  & .project-demo {
+    border: var(--border-settings);
+    border-radius: var(--border-radius-settings);
+  }
+}
+
+.accordion {
+  background: transparent !important;
+
+  & .accordion-item {
+    border: none !important;
+    background: transparent !important;
+    & .accordion-header {
+      background: transparent !important;
+      border: none !important;
+      color: var(--darkest-color) !important;
+      font-size: larger !important;
+
+      & .accordion-button {
+        border: none !important;
+        border-bottom: 3px solid var(--lighter-navy-blue) !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0% !important;
+        font-weight: 600 !important;
+        font-size: larger !important;
+        color: var(--lighter-navy-blue) !important;
+      }
+
+      & .accordion-button:focus {
+        box-shadow: none !important;
+        border-bottom: 3px solid var(--darkest-color) !important;
+        color: var(--darkest-color) !important;
+      }
+
+      & .accordion-button::after {
+        background-image: none !important;
+        content: "\f0d7" !important;
+        font-family: fontawesome !important;
+        width: auto !important;
+        height: auto !important;
       }
     }
-    & .demo {
-      max-width: 30rem;
-      background-position: center;
-      border-radius: 15px;
-      border: 3px solid var(--darkest-color);
+  }
+}
+
+/* MEDIA QUERY: accordian section */
+@media only screen and (max-width: 576px) {
+  .accordion {
+    & .project-content-body {
+      & h4 {
+        font-size: 15pt;
+      }
     }
   }
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  & td {
-    border-bottom: 2px solid #6379b5;
-    padding: 1rem;
-  }
-  .year {
-    text-align: right;
-    font-style: italic;
+@media only screen and (min-width: 768px) {
+  .project-title,
+  .project-icon-list {
+    width: auto;
   }
 }
 
-.skills-accomplishments {
-  flex-direction: column;
-  gap: 1rem;
+@media only screen and (max-width: 1199px) {
+  .project-icon {
+    height: 1.75rem !important;
+  }
 }
 
 footer {
-  padding: 2rem;
-  width: 80%;
-  margin: auto;
+  box-shadow: 0 0 0 100vmax var(--lighter-navy-blue);
+  clip-path: inset(0 -100vmax);
+  background: var(--lighter-navy-blue);
+  color: var(--lightest-color);
+  > .container {
+    & a {
+      font-style: italic;
+      color: var(--darkest-color);
+      text-decoration: none;
+      transition: 80ms;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+    & .icon-links {
+      & i:hover {
+        color: var(--lightest-color);
+      }
+    }
+  }
 }
 
-/* component */
+/* components */
+
+.education-cards {
+  .card {
+    border: 3px solid var(--darkest-color) !important;
+    background: var(--lightest-color) !important;
+    & hr {
+      border: none;
+      color: var(--secondary-color) !important;
+      background-color: var(--secondary-color) !important;
+      height: 3px !important;
+    }
+  }
+}
+
 .btn {
-  background-color: #f6f7f0;
-  padding: 1rem;
-  border-radius: 15px;
-  text-decoration: none;
-  color: var(--darkest-color);
-  border: 3px solid var(--darkest-color);
-  transition: 0.2s;
+  background-color: #f6f7f0 !important;
+  padding: 1rem !important;
+  border-radius: 15px !important;
+  text-decoration: none !important;
+  color: var(--darkest-color) !important;
+  border: 3px solid var(--darkest-color) !important;
+  transition: 0.2s !important;
 }
 
 .btn:hover {
-  background-color: #465b95;
-  color: #f6f7f0;
-  border: 3px solid var(--darkest-color);
-  transform: translate(0.25rem, -0.25rem);
-  box-shadow: -0.25rem 0.25rem var(--darkest-color);
+  background-color: #465b95 !important;
+  color: #f6f7f0 !important;
+  border: 3px solid var(--darkest-color) !important;
+  transform: translate(0.25rem, -0.25rem) !important;
+  box-shadow: -0.25rem 0.25rem var(--darkest-color) !important;
 }
 
-.bi-github:hover {
-  fill: var(--lightest-color);
+@media only screen and (min-width: 1350px) {
+  /* ruleset for >= 320px */
 }
