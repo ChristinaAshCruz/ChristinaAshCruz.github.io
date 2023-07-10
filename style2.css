@@ -135,6 +135,27 @@ body {
   }
 }
 
+/* MEDIA QUERY: accordian section */
+@media only screen and (max-width: 576px) {
+  .accordion {
+    & .project-content-body {
+      & h4 {
+        font-size: 15pt;
+      }
+      & .project-icon {
+        height: rem !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project-title,
+  .project-icon-list {
+    width: auto;
+  }
+}
+
 footer {
   box-shadow: 0 0 0 100vmax var(--lighter-navy-blue);
   clip-path: inset(0 -100vmax);
