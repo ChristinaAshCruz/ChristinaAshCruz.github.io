@@ -30,7 +30,6 @@
 
 body {
   background-color: var(--primary-color) !important;
-
   min-height: 100vh;
 
   display: flex;
@@ -48,7 +47,7 @@ body {
     color: var(--darkest-color) !important;
     transition: 80ms;
   }
-  & a:hover {
+  & .nav-links:hover {
     border-bottom: 2px solid var(--lightest-color);
     color: var(--lightest-color) !important;
   }
