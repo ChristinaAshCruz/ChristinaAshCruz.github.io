@@ -92,6 +92,11 @@ body {
     border: var(--border-settings);
     border-radius: var(--border-radius-settings);
   }
+  & .project-features {
+    & li {
+      padding-top: 2rem !important;
+    }
+  }
 }
 
 .accordion {
@@ -182,6 +187,10 @@ footer {
 }
 
 /* components */
+
+.project-feature {
+  padding-top: 2rem !important;
+}
 
 .education-cards {
   .card {
