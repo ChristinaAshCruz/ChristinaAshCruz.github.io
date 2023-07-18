@@ -154,8 +154,8 @@ body {
   & a {
     color: var(--more-dark);
   }
-  & a {
-    color: var(--more-dark);
+  & a:hover {
+    color: var(--lighter-navy-blue);
   }
 }
 
