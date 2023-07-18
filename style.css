@@ -35,7 +35,7 @@ body {
 
 .header {
   width: 100%;
-  box-shadow: 0 0 0 100vmax var(--secondary-color);
+  /* box-shadow: 0 0 0 100vmax var(--secondary-color); */
   clip-path: inset(0 -100vmax);
   background-color: var(--secondary-color);
   /* border-bottom: var(--border-settings); */
@@ -147,6 +147,15 @@ body {
         height: auto !important;
       }
     }
+  }
+}
+
+.contact {
+  & a {
+    color: var(--more-dark);
+  }
+  & a {
+    color: var(--more-dark);
   }
 }
 
@@ -309,6 +318,11 @@ footer {
   transform: translate(0.25rem, -0.25rem) !important;
   box-shadow: -0.25rem 0.25rem var(--more-dark) !important;
 }
+
+.project-btn {
+  background: var(--secondary-color) !important;
+}
+
 @media only screen and (min-width: 1350px) {
   /* ruleset for >= 320px */
 }
