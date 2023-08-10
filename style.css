@@ -87,7 +87,7 @@ body {
   }
 }
 
-.about-me {
+.border-card {
   border: var(--border-settings);
   border-radius: 15px;
   .profile {
