@@ -20,6 +20,7 @@
 * Implementing Bootstrap and custom styling
 * Clean and simple UI/UX
 * Hosted and deployed using GitHub pages
+* *NEW* contact form using [formsubmit.co](https://formsubmit.co/)
 
 ## 💥 Demo
 <img src="https://github.com/ChristinaAshCruz/ChristinaAshCruz.github.io/assets/117312882/6962ce3e-7abf-4ede-a9d8-2012ea256431"/>
